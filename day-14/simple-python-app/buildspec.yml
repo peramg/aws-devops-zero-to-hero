@@ -27,7 +27,5 @@ phases:
       - echo "build is complete"
   artifacts:
     files:
-      - app.py
-      - requirements.txt
-      - Dockerfile
-    name: BuildArtifact
+      - '**/*'
+    base-directory: ../simple-python-app
